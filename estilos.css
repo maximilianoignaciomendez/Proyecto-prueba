@@ -130,17 +130,21 @@ body{
 }
 
 #sobre-mi{
-    background: #1a1a1aa1;
     color: white;
-    padding: 40px 40px 40px 40px;
-
+    background: rgba(10,10,10,0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.03);
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.05);
 }
+
 
 #sobre-mi h2{
     margin-bottom: 40px;
     text-align: center;
     margin-left: 0;
-    color: plum
+    color: plum;
 }
 
 .sobre-container{
@@ -217,3 +221,155 @@ body{
     box-shadow: 0 0 40px rgba(255,255,255,0.35);
 }
 
+#habilidades{
+    background: rgba(20, 20, 20, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+#habilidades h2{
+    color: plum;
+}
+
+
+.skills{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background: rgba(20,20,20,0.6);
+    backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+}
+
+
+.fila{
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    text-align: left;
+}
+
+.encabezado{
+    font-weight: bold;
+    color: plum;
+    background: rgba(255,255,255,0.04);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.fila:last-child{
+    border-bottom: none;
+}
+
+.barra{
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progreso{
+    height: 100%;
+    background: plum;
+    width: 0;
+    border-radius: 10px;
+    animation: load 1.5s ease forwards;
+}
+
+.skills-table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.skills-table th,
+.skills-table td{
+    padding: 10px;
+    text-align: left;
+}
+
+.skills-table .fila{
+    display: table-row;
+}
+
+.skills-table thead th{
+    background: rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 192, 203, 0.18);
+    border-bottom: 1px solid rgba(255, 192, 203, 0.18);
+}
+
+.skills-table thead th:first-child{
+    border-left: 1px solid rgba(255, 192, 203, 0.18);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.skills-table thead th:last-child{
+    border-right: 1px solid rgba(255, 192, 203, 0.18);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.skills-table tbody td{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.skills-table tbody tr:last-child td{
+    border-bottom: none;
+}
+
+@keyframes load{
+    from{ width: 0; }
+}
+
+.html{ width: 90%; }
+.css{ width: 70%; }
+.js{ width: 40%; }
+
+.listas-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.competencias, .ruta {
+    text-align: left;
+}
+
+.competencias h4, .ruta h4 {
+    color: plum;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.listas-contenedor ul, .listas-contenedor ol {
+    padding-left: 0;
+    list-style-position: inside;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.listas-contenedor li {
+    margin-bottom: 12px;
+}
+
+.listas-contenedor ol li::marker {
+    color: plum;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .listas-contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
