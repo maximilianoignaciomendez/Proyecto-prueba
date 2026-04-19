@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maximiliano Méndez | Portafolio</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<body class="montserrat-1">
 
-<body>
-<nav class="navbar montserrat-1">
+<nav class="navbar">
     <div class="logo">
-    <img src="logo.png" alt="Logo">
-    <span>Maximiliano Méndez</span>
-</div>
-    <div class="navlinks montserrat-1">
+        <img src="logo.png" alt="Logo">
+        <span>Maximiliano Méndez</span>
+    </div>
+    <div class="navlinks">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
@@ -25,138 +25,201 @@
 </nav>
 
 <main>
-<section class="hero montserrat-1">
-
-    <div class="hero-texto ">
+<section class="hero">
+    <div class="hero-texto">
         <h1>Hola, soy <span>Maximiliano</span></h1>
         <h3>Estudiante de Desarrollo Web</h3>
-
         <p>
             Apasionado por crear experiencias web modernas y accesibles.
-            Actualmente cursando la carrera de <em>Analista Programador</em> en <strong>INACAP</strong>
+            Actualmente cursando la carrera de <em>Analista Programador</em> en <strong>INACAP</strong>.
         </p>
     </div>
-
     <div class="hero-img">
-        <img src="perfil.png" class="perfil">
+        <img src="perfil.png" alt="Foto de perfil" class="perfil">
     </div>
-
 </section>
 
-<section id="sobre-mi" class="section montserrat-1">
+<section id="sobre-mi" class="section">
     <h2>Sobre mí</h2>
+    <div class="sobre-container">
+        
+        <article class="sobre-col-izq">
+        <p><strong><span>
+            Mi nombre es Maximiliano Méndez</span></strong> y soy estudiante de desarrollo web. Desde que descubrí la programación, me apasiona crear sitios web que sean tanto funcionales como estéticamente agradables.
+        <p>
+            Actualmente me encuentro aprendiendo <em>HTML</em>, <em>CSS</em> y <em>JavaScript</em>, con el objetivo de convertirme en un desarrollador front-end profesional. Me gusta trabajar en equipo y aprender nuevas tecnologias
+        </p>
+        </article>
 
-    <article class="sobre-container">
-
-        <div class="sobre-texto">
-            <p><strong><span>
-                Mi nombre es Maximiliano Méndez</span></strong> y soy estudiante de desarrollo web. Me gusta aprender nuevas tecnologías y mejorar mis habilidades constantemente.
-            </p>
-            <p>
-                Actualmente me encuentro aprendiendo <em>HTML</em>, <em>CSS</em> y <em>JavaScript</em>, con el objetivo de convertirme en un desarrollador front-end profesional.
-            </p>
-        </div>
-
-        <div class="sobre-datos">
-            <h4>Datos personales</h4>
-
+        <aside class="sobre-col-der">
+            <h4>Datos Personales</h4>
             <div class="dato">
                 <span class="label">Edad</span>
                 <span class="valor">30</span>
             </div>
-
             <div class="dato">
                 <span class="label">Email</span>
                 <span class="valor">max@email.com</span>
             </div>
-
             <div class="dato">
                 <span class="label">Carrera</span>
-                <span class="valor">Programación</span>
+                <span class="valor">Analista Programador</span>
             </div>
-
             <div class="dato">
-                <span class="label">Estudios</span>
+                <span class="label">Institución</span>
                 <span class="valor">INACAP</span>
             </div>
-
             <div class="dato">
                 <span class="label">Intereses</span>
-                <span class="valor">Desarrollo web, Gaming, Música</span>
+                <span class="valor">Desarrollo Web, Gaming, Música</span>
+            </div>
+        </aside>
+    </div>
+</section>
+
+    <section id="habilidades" class="section">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <table class="skills-table">
+                <thead>
+                    <tr class="fila encabezado">
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Dominio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fila">
+                        <td>HTML</td>
+                        <td>Avanzado</td>
+                        <td>
+                            <div class="barra"><div class="progreso html"></div></div>
+                        </td>
+                    </tr>
+                    <tr class="fila">
+                        <td>CSS</td>
+                        <td>Intermedio</td>
+                        <td>
+                            <div class="barra"><div class="progreso css"></div></div>
+                        </td>
+                    </tr>
+                    <tr class="fila">
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                        <td>
+                            <div class="barra"><div class="progreso js"></div></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="listas-contenedor">
+            <div class="competencias">
+                <h4>Competencias Técnicas</h4>
+                <ul>
+                    <li>Maquetación responsiva</li>
+                    <li>Control de versiones con Git</li>
+                    <li>Diseño con Flexbox y Grid</li>
+                    <li>Accesibilidad web (WCAG)</li>
+                </ul>
+            </div>
+            <div class="ruta">
+                <h4>Ruta de Aprendizaje</h4>
+                <ol>
+                    <li>HTML5 y CSS3 (actual)</li>
+                    <li>JavaScript ES6+</li>
+                    <li>React.js</li>
+                    <li>Node.js y Express</li>
+                </ol>
             </div>
         </div>
+    </section>
 
-    </article>
-</section>
+<section id="proyectos" class="section montserrat-1">
+    <h2>Proyectos</h2>
+    <p>Algunos de mis trabajos</p>
 
-<section id="habilidades" class="section montserrat-1">
-    <h2>Habilidades</h2>
+    <div class="proyectos-grid">
+        <article class="proyecto-card">
+            <figure>
+                <img src="landing.png" alt="Landing Page">
+                <figcaption>
+                    <h3>Landing Page</h3>
+                    <blockquote>
+                        Página de aterrizaje para producto digital con diseño moderno.
+                    </blockquote>
+                    <a href="https://github.com" target="_blank">Ver repositorio →</a>
+                </figcaption>
+            </figure>
+        </article>
 
-    <div class="skills">
-        <table class="skills-table">
-            <thead>
-                <tr class="fila encabezado">
-                    <th>Tecnología</th>
-                    <th>Nivel</th>
-                    <th>Dominio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="fila">
-                    <td>HTML</td>
-                    <td>Avanzado</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso html"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="fila">
-                    <td>CSS</td>
-                    <td>Intermedio</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso css"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="fila">
-                    <td>JavaScript</td>
-                    <td>Básico</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso js"></div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <article class="proyecto-card">
+            <figure>
+                <img src="blog5.png" alt="Blog Personal">
+                <figcaption>
+                    <h3>Blog Personal</h3>
+                    <blockquote>
+                        Blog responsivo con sistema de artículos y categorías.
+                    </blockquote>
+                    <a href="https://github.com" target="_blank">Ver repositorio →</a>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="proyecto-card">
+            <figure>
+                <img src="graficos.png" alt="Dashboard Admin">
+                <figcaption>
+                    <h3>Dashboard Admin</h3>
+                    <blockquote>
+                        Panel de administración con gráficos y tablas de datos.
+                    </blockquote>
+                    <a href="https://github.com" target="_blank">Ver repositorio →</a>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="proyecto-card">
+            <figure>
+                <img src="clima.png" alt="App Clima">
+                <figcaption>
+                    <h3>App Clima</h3>
+                    <blockquote>
+                        Aplicación del clima con API externa y diseño responsivo.
+                    </blockquote>
+                    <a href="https://github.com" target="_blank">Ver repositorio →</a>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="proyecto-card">
+            <figure>
+                <img src="carrito.png" alt="Tienda Online">
+                <figcaption>
+                    <h3>Tienda Online</h3>
+                    <blockquote>
+                        E-commerce básico con catálogo de productos y carrito.
+                    </blockquote>
+                    <a href="https://github.com" target="_blank">Ver repositorio →</a>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="proyecto-card">
+            <figure>
+                <img src="maletin.png" alt="Portafolio v1">
+                <figcaption>
+                    <h3>Portafolio v1</h3>
+                    <blockquote>
+                        Primera versión de mi portafolio profesional.
+                    </blockquote>
+                    <a href="https://github.com" target="_blank">Ver repositorio →</a>
+                </figcaption>
+            </figure>
+        </article>
     </div>
-
-    <div class="listas-contenedor">
-        <div class="competencias">
-            <h4>Competencias Técnicas</h4>
-            <ul>
-                <li>Maquetación responsiva</li>
-                <li>Control de versiones con Git</li>
-                <li>Diseño con Flexbox y Grid</li>
-                <li>Accesibilidad web (WCAG)</li>
-            </ul>
-        </div>
-
-        <div class="ruta">
-            <h4>Ruta de Aprendizaje</h4>
-            <ol>
-                <li>HTML5 y CSS3 (actual)</li>
-                <li>JavaScript ES6+</li>
-                <li>React.js</li>
-                <li>Node.js y Express</li>
-            </ol>
-        </div>
-    </div>
 </section>
-
-
-
+</main>
 </body>
 </html>
