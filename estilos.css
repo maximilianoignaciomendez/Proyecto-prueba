@@ -9,6 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body{
     background-image: linear-gradient(
         rgba(0,0,0,0.75),
@@ -36,12 +37,24 @@ body{
     z-index: 1000;
 }
 
+
 .logo{
     display: flex;
     align-items: center;
     gap: 15px;
     font-size: 24px;
     font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
 }
 
 .logo img {
@@ -51,7 +64,6 @@ body{
 
 .logo img:hover{
     transform: scale(1.1);
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.486));
 }
 
 .navlinks{
@@ -71,7 +83,8 @@ body{
     text-shadow: 0 0 10px plum;
 }
 
-/* --- HERO SECTION --- */
+
+/* --- HERO --- */
 .hero{
     display: flex;
     justify-content: center;
@@ -82,6 +95,7 @@ body{
     margin: 0 auto;
     padding: 20px;
 }
+
 
 .hero-texto h1{
     font-size: 2.3rem;
@@ -111,10 +125,10 @@ body{
     object-fit: cover;
     border: 3px solid plum;
     box-shadow: 0 0 30px rgba(221, 160, 221, 0.3);
+    transition: 0.3s ease;
 }
 
 .perfil:hover{
-    transition: 0.3s ease;
     transform: scale(1.05);
     box-shadow: 0 0 40px rgba(255,255,255,0.35);
 }
@@ -142,6 +156,7 @@ body{
     background: plum;
     margin: 20px auto 0;
 }
+
 
 /* --- SOBRE MÍ (2 COLUMNAS) --- */
 
@@ -374,6 +389,182 @@ body{
     text-align: center;
     padding: 60px 20px;
 }
+
+#contacto {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 80px 20px;
+    color: white;
+}
+
+.contacto-subtitulo {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.contacto-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.contacto-form input, 
+.contacto-form textarea,
+.contacto-form select {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(221, 160, 221, 0.2);
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    appearance: none; /* Para limpiar el estilo por defecto del select */
+}
+
+/* Estilo específico para el select para que tenga la flecha */
+.contacto-form select {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23DDA0DD%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%2E');
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 12px auto;
+    cursor: pointer;
+}
+
+.contacto-form select option {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.contacto-form input:focus, 
+.contacto-form textarea:focus,
+.contacto-form select:focus {
+    border-color: plum;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-enviar {
+    background: plum;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background: #d8a0d8;
+    transform: translateY(-2px);
+}
+
+.contacto-info-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(221, 160, 221, 0.1);
+}
+
+.contacto-info-card h3 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.info-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-item .icon {
+    font-size: 1.2rem;
+    color: plum;
+    width: 25px;
+    text-align: center;
+}
+
+.info-item p, .info-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin: 0;
+}
+
+.info-item a:hover {
+    color: plum;
+    text-decoration: underline;
+}
+
+/* ESTILOS PARA EL FOOTER */
+.main-footer {
+    background: rgba(5, 5, 5, 0.8);
+    padding: 30px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(221, 160, 221, 0.1);
+}
+
+@media (max-width: 900px) {
+    .contacto-container {
+        flex-direction: column;
+    }
+    
+    .contacto-info-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
 /* --- RESPONSIVE --- */
 @media (max-width: 850px) {
     .sobre-container, .hero, .listas-contenedor {
